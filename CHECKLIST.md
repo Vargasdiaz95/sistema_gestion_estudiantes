@@ -26,3 +26,4 @@ Este checklist asegura que el código del **Sistema de Gestión de Estudiantes**
 - [x] Se evita exponer credenciales en el código.
 - [x] Se valida la entrada de datos en los formularios.
 - [ ] Se implementa autenticación (pendiente de futuras mejoras).
+
