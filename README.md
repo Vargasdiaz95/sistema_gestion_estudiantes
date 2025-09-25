@@ -32,6 +32,9 @@ Proyecto académico desarrollado en **Java (Spring Boot + Thymeleaf)** como part
 - **Frontend Developer:** Fabian Ricardo Vargas
 - **Tester/QA:** Fabian Ricardo Vargas
 
+## Pruebas 🔬
+> Rama feature/estudiantes: desarrollo en curso 🚧
+
 ## ▶️ Ejecución
 Clona el repositorio y ejecuta:
 
