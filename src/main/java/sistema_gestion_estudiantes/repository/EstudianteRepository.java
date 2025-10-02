@@ -11,6 +11,7 @@ package sistema_gestion_estudiantes.repository;
 
 import sistema_gestion_estudiantes.model.Estudiante;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 public interface EstudianteRepository extends JpaRepository<Estudiante, Long> {
     
 }

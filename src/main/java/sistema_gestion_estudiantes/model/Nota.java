@@ -11,17 +11,20 @@ package sistema_gestion_estudiantes.model;
 import jakarta.persistence.*;
 
 @Entity
+
 public class Nota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String asignatura;
-    private Double calificacion;
+    // Campo para la calificación
+    private Double valor;
 
     @ManyToOne
-    @JoinColumn(name = "estudiante_id")
+    @JoinColumn(name = "estudiante_id", nullable = false)
     private Estudiante estudiante;
+
+    // --- Getters y Setters ---
 
     public Long getId() {
         return id;
@@ -31,20 +34,12 @@ public class Nota {
         this.id = id;
     }
 
-    public String getAsignatura() {
-        return asignatura;
+    public Double getValor() {
+        return valor;
     }
 
-    public void setAsignatura(String asignatura) {
-        this.asignatura = asignatura;
-    }
-
-    public Double getCalificacion() {
-        return calificacion;
-    }
-
-    public void setCalificacion(Double calificacion) {
-        this.calificacion = calificacion;
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 
     public Estudiante getEstudiante() {
@@ -54,6 +49,4 @@ public class Nota {
     public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
     }
-    
-    
 }

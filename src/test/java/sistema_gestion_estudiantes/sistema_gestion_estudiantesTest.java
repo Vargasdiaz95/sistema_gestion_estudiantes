@@ -7,17 +7,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class sistema_gestion_estudiantesTest {
-
-	@Test
-    public void testCrearEstudiante() {
-        Estudiante est = new Estudiante();
-        est.setNombre("Juan Pérez");
-        est.setCorreo("juan@correo.com");
-        est.setPrograma("Ingeniería de Sistemas");
-
-        assertEquals("Juan Pérez", est.getNombre());
-        assertEquals("juan@correo.com", est.getCorreo());
-        assertEquals("Ingeniería de Sistemas", est.getPrograma());
+    @Test
+    void testCrearEstudiante() {
+        Estudiante estudiante = new Estudiante();
+        estudiante.setNombre("Ana");
+        estudiante.setCorreo("ana@mail.com");
+        estudiante.setPrograma("Ingeniería");
+        
+        assertEquals("Ana", estudiante.getNombre());
+        assertEquals("ana@mail.com", estudiante.getCorreo());
+        assertEquals("Ingeniería", estudiante.getPrograma());
     }
-
 }
